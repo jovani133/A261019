@@ -12,7 +12,7 @@ CAMINHO_CSV_ORIGINAL = os.path.join(PASTA, "Base_Varejo_Novo.csv")
 CAMINHO_CSV = os.path.join(PASTA, "Base_Varejo.csv")
 
 def carregar_dados():
-    df = pd.read_csv(CAMINHO_CSV,sep=';')
+    df = pd.read_csv(CAMINHO_CSV_ORIGINAL,sep=';')
     return df
 
 if __name__ == "__main__":
